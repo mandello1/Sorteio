@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sorteio</title>
+</head>
+<body>
+    <div id="global">
+        <div id="geral">
+            <h1>Seu Sorteador On-line</h1>
+            <h3>Qual será o tipo do seu sorteio?</h3>
+            <input type="radio" name="tipo" value="a" id="numero">
+            <label for="numero">Sorteio por número</label><br>
+            <input type="radio" name="tipo" value="b" id="nome">
+            <label for="nome">Sorteio por nome</label><br><br>
+            <button id="botaoTipo" onclick="activate()">Selecionar</button>
+            <br><br>
+            <div id="inputArea">
+            
+            </div>
+        </div>
+        <div id="sorteioArea">
+            <button id="sortear" onclick="sorteio()">Sortear</button>
+            
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
